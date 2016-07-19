@@ -130,7 +130,7 @@ def trainSVM(trainData=None):
     validation_Y = validation_Y[0:VALIDATION_SIZE]
 
     svr = svm.SVR()
-    nusvr = svm.nuSVR()
+    nusvr = svm.NuSVR()
     lsvr = svm.LinearSVR()
 
     print("ep bch tm1 trLoss1 vlLoss1 tm2 trLoss2 vlLoss2 tm3 trLoss3 vlLoss3")
