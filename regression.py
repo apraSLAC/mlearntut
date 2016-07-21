@@ -142,6 +142,10 @@ def trainSVM(trainData=None):
             next_sample_idx += minibatch_size
             X=training_X[next_sample_idx:(next_sample_idx+minibatch_size),:]
             Y=training_Y[next_sample_idx:(next_sample_idx+minibatch_size),:]
+
+            from IPython import embed; embed(); sys.exit()
+            # Using SVRs may not be feasable due to the multidimensional nature
+            # of images.
             t0 = time.time()
             svr = svr.fit(X,Y)
             tm1 = time.time() - t0
